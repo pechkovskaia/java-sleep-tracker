@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ChronotypeFunctionTest {
 
         @Test
-        void Chronotypes_ShouldReturnOwl() {
+        void chronotypesShouldReturnOwl() {
 
             List<SleepingSession> sessions = List.of(
                     new SleepingSession(
@@ -37,7 +37,7 @@ public class ChronotypeFunctionTest {
         }
 
         @Test
-            void Chronotypes_ShouldReturnLark() {
+            void chronotypesShouldReturnLark() {
 
                 List<SleepingSession> sessions = List.of(
                         new SleepingSession(
@@ -64,7 +64,7 @@ public class ChronotypeFunctionTest {
             }
 
         @Test
-            void Chronotypes_ShouldReturnPigeon() {
+            void chronotypesShouldReturnPigeon() {
 
                 List<SleepingSession> sessions = List.of(
                         new SleepingSession(

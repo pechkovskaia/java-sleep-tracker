@@ -1,4 +1,5 @@
 package ru.yandex.practicum.sleeptracker;
+
 import java.time.LocalDateTime;
 
 // факты о сне
@@ -16,9 +17,11 @@ public class SleepingSession {
     public LocalDateTime getFallAsleepTime() {
         return fallAsleepTime;
     }
+
     public LocalDateTime getWakeUpTime() {
         return wakeUpTime;
     }
+
     public SleepQuality getQuality() {
         return quality;
     }

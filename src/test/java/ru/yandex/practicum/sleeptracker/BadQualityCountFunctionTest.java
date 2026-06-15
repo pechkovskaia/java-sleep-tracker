@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class BadQualityCountFunctionTest {
 
     @Test
-    void BadQuality_shouldReturnBadSession() {
+    void badQualityShouldReturnBadSession() {
 
         List<SleepingSession> sessions = List.of(
                 new SleepingSession(

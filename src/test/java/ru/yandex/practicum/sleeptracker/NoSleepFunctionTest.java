@@ -33,7 +33,7 @@ public class NoSleepFunctionTest {
     }
 
     @Test
-    void NoSleep_shouldReturnOneNightWithNoSleep() {
+    void noSleepShouldReturnOneNightWithNoSleep() {
         List<SleepingSession> sessions = List.of(
                 new SleepingSession(
                         LocalDateTime.of(2025, 10, 1, 22, 15),
