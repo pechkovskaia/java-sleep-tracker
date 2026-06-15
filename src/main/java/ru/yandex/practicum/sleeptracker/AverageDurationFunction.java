@@ -6,9 +6,9 @@ import java.util.function.Function;
 
 import static java.lang.String.valueOf;
 
-public class AverageDurationFunction implements Function <List<SleepingSession>, SleepAnalysisResult> {
+public class AverageDurationFunction implements Function<List<SleepingSession>, SleepAnalysisResult> {
 
-    @Override public SleepAnalysisResult apply (List<SleepingSession> sessions) {
+    @Override public SleepAnalysisResult apply(List<SleepingSession> sessions) {
         long average = (long) sessions.stream()
                 .mapToLong(session -> Duration.between(session.getFallAsleepTime(),
                         session.getWakeUpTime()).toMinutes())
