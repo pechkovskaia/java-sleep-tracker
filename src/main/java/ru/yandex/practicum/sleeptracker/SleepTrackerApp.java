@@ -25,7 +25,7 @@ public class SleepTrackerApp {
 
         List<SleepingSession> sessions = SleepSessionReader.readFromFile(args[0]);
 
-        ANALYZERS.stream().map(function -> function.apply(sessions)).forEach(System.out ::println);
+        ANALYZERS.stream().map(function -> function.apply(sessions)).forEach(System.out::println);
 
 
     }
