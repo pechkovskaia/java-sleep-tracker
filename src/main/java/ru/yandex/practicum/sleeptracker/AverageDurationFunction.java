@@ -10,6 +10,8 @@ public class AverageDurationFunction implements Function<List<SleepingSession>, 
 
     @Override public SleepAnalysisResult apply(List<SleepingSession> sessions) {
         long average = (long) sessions.stream()
+                .filter(session -> session.getFallAsleepTime() != null &&
+                        session.getWakeUpTime() != null)
                 .mapToLong(session -> Duration.between(session.getFallAsleepTime(),
                         session.getWakeUpTime()).toMinutes())
                 .average()
