@@ -16,9 +16,11 @@ public class SleepingSession {
     public LocalDateTime getFallAsleepTime() {
         return fallAsleepTime;
     }
+
     public LocalDateTime getWakeUpTime() {
         return wakeUpTime;
     }
+
     public SleepQuality getQuality() {
         return quality;
     }
